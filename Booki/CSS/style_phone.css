@@ -1,0 +1,297 @@
+*{
+    background-color: white;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*****************************************************************HEADER*****************************************************/
+
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.logo{
+    width: 100%;
+    height: 80px;
+    background-image: url(../image/logo/Booki@3x.png);
+    background-repeat: no-repeat;
+    background-size: 120px 60px;
+    background-position: center;
+    margin-top: 10px;
+    
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.nav-links{  
+    width: 100%;
+    
+}
+
+
+.nav-item{ 
+    height: 50px;
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 4px solid #F2F2F2;
+    padding: 2% 2%
+
+      
+}
+
+
+.nav-item a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding-bottom: 0;
+    
+}
+
+
+.nav-item:hover a{
+    color: #0065FC;
+}
+
+
+.nav-item:hover {
+    border-top: none;
+    border-bottom: 4px solid #0065FC;
+}
+
+
+
+/************************************************SEARCH BAR**********************************************/
+
+#search-section{
+    margin: 6% 3% 0 3%;
+}
+
+#search-bar{
+    display: flex;
+    width: 90%;
+    max-width: fit-content;
+}
+
+#search-bar input::placeholder {
+    font-size: 19px;
+}
+
+#search-bar button{
+    display: none;
+}
+
+#search-icon{
+    display: inline;
+    background-color: #0065FC;
+    color: white;
+    padding: 25px 25px 25px 25px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+
+/****************************************************************FILTER*********************************************************/
+
+
+#filter-section{
+    margin-left: 4%;
+}
+
+
+/**************************************************NUMBER OF LOGEMENT*****************************************************************/
+
+#number-logement {
+    margin: 8% 0 8% 8%;
+    font-size: 17px;
+  }
+  
+
+
+/*************************************************************HERBERGEMENT MARSEILLE********************************************************/
+
+
+#container-hebergement{
+    background-color: white;
+}
+
+#container-hebergement p{
+    font-size: 20px;
+}
+
+.card-image-desktop{
+    display: none;   
+}
+
+.card-image-tablette{
+    display: none;
+}
+
+.card-image-phone{
+    display: block;
+    margin: 0;
+}
+
+.card{
+    border-radius: 25px;
+    margin-bottom: 5%;
+    width: 100%;
+    height: fit-content;
+    margin: 0 3% 5% 3%
+}
+
+
+.card-image-phone img{
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 115px;
+}
+
+
+
+.card-name{
+    font-size: 18px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.card-price{
+    margin-bottom: 2%;
+    font-size: 17px;
+}
+.card-rating{
+    margin-left: 2%;
+    margin-bottom: 2%
+}
+.card i{
+    font-size: 15px;
+    margin: 0;
+}
+#show-more{
+    padding: 2% 0 5% 5%!important;
+}
+#container-hebergement p{
+    padding: 40px 0 30px 0px;
+}
+
+
+/*************************************************************MOST POPULAR********************************************************/
+
+
+.popular-card-image-tablette{
+    display: none;
+}
+
+.popular-card-image-desktop{
+    display: none;
+}
+
+.popular-card-image-phone{
+    display: block;
+}
+
+
+#container-most-popular{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    padding: 0;
+}
+
+.popular-card{
+    margin: 0 auto;
+    width: 90%;
+    padding: 0%;
+    border-radius: 15px;
+    height: 180px;
+    margin-bottom: 4%;
+}
+
+.popular-card-body{
+    height: 100%;
+    padding: 1%;
+}
+
+.popular-card-image-phone{
+    width: 100%;
+    height: 100%;
+}
+
+.popular-card-image-phone img{
+    border-radius: 9% 0 0 9%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.popular-card-name{
+    font-size: 18px;
+}
+.popular-card-price{
+    font-size: 17px;
+}
+.popular-card-rating{
+    font-size: 15px;
+}
+
+
+
+/************************************************************ACTIVITY***************************************************/
+
+#activity-main-title {
+    padding: 5% 0 5% 5%;
+    font-size: 22px;
+  }
+
+#activity-container{
+    width: 100%;
+    padding: 5%;
+}  
+
+.activity-card{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 5%;
+
+}
+
+.activity-card img{
+    height: 180px!important;
+}
+
+.activity-title{
+    font-size: 20px;
+    margin: 4% 0 3% 4%;
+}
+
+
+/******************************************************FOOTER*******************************************/
+
+#footer-container{
+   display: block;
+   padding-top: 5%;
+   padding-bottom: 5%;
+}
+
+
+#list-name {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }

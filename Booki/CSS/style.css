@@ -1,0 +1,497 @@
+* {
+  background-color: white;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:link { 
+  text-decoration: none; 
+  color: black;
+}
+a:visited {
+  text-decoration: none; 
+  color: black;
+}
+
+/*****************************************************************HEADER*****************************************************/
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.logo {
+  background-image: url(../image/logo/Booki@3x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 80px;
+  margin-top: 25px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 40px 40px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.nav-item:hover a {
+  color: #0065fc;
+}
+
+.nav-item:hover {
+  border-top: 2px solid #0065fc;
+}
+
+/************************************************SEARCH BAR**********************************************/
+#search-section {
+  margin-left: 60px;
+}
+
+#search-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#search-text {
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+#search-bar {
+  margin-top: 10px;
+  width: fit-content;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  border-radius: 20px 20px 20px 20px;
+}
+
+#location-dot {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 30px 25px 30px 25px;
+  border-radius: 20px 0 0 20px;
+}
+
+#search-bar input {
+  width: 250px;
+  height: 60px;
+  border: none;
+  text-indent: 15px;
+}
+
+#search-bar input::placeholder {
+  color: black;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#search-bar button {
+  background-color: #0065fc;
+  color: #f2f2f2;
+  padding: 18px 20px 20px 20px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#search-icon {
+  display: none;
+}
+
+/****************************************************************FILTER*********************************************************/
+
+#filter-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+#filter-section h2 {
+  display: inline-block;
+  margin: 35px 10px 0 10px;
+  font-size: 20px;
+}
+#filter-section li {
+  display: inline-block;
+  padding: 0 15px 0 0px;
+  margin: 20px 10px 0 10px;
+  font-size: 20px;
+}
+
+#filter-section .filter-btn {
+  border: 2px solid #f2f2f2;
+  border-radius: 100px;
+}
+
+#filter-section i {
+  color: #0065fc;
+  background-color: #deebff;
+  padding: 25px 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#filter-section li:hover{
+  background-color: #deebff;
+}
+
+/**************************************************NUMBER OF LOGEMENT*****************************************************************/
+
+#number-logement {
+  font-size: 20px;
+  margin: 50px 0 50px 50px;
+}
+
+#number-logement i {
+  color: #0065fc;
+  border: 2px solid #deebff;
+  border-radius: 50%;
+  padding: 3px 7px;
+  margin-right: 10px;
+}
+
+/*MID SECTION*/
+
+#mid-section {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*************************************************************HERBERGEMENT MARSEILLE********************************************************/
+#container-hebergement {
+  margin-left: 3%;
+  width: 60%;
+  height: fit-content;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#container-hebergement h2, #container-hebergement p {
+  background-color: inherit;
+  font-weight: bold;
+  padding: 40px 0 30px 20px;
+  font-size: 25px;
+}
+
+#show-more {
+  padding: 10px 0 40px 20px !important;
+  font-size: 22px !important;
+}
+
+/*CARD*/
+
+#card-container {
+  display: inline-flex;
+  justify-content: space-around;
+  background-color: inherit;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 31%;
+  height: 40%;
+  padding: 0%;
+  margin-bottom: 3%;
+  border-radius: 10%;
+  box-shadow: 0px 0px 20px 6px rgba(189, 189, 189, 0.49);
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px 6px #bdbdbd;
+  color: #0065fc;
+}
+
+.card-image-tablette {
+  display: none;
+}
+
+.card-image-phone {
+  display: none;
+}
+
+.card-image-desktop {
+  margin: 2% 2% 3% 2%;
+}
+
+.card-image-desktop img {
+  border-radius: 10% 10% 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 130px;
+}
+
+.card-name {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 2%;
+  margin-left: 3%;
+}
+
+.card-price {
+  margin-bottom: 2%;
+  color: black !important;
+  margin-left: 3%;
+  font-size: 15px;
+}
+
+.card-rating{
+  margin-left: 3%;
+}
+/*STAR COLOR*/
+
+.card i {
+  color: #0065fc;
+  margin-bottom: 3%;
+  margin-left: 0;
+}
+
+i.gray-star {
+  color: #f2f2f2;
+}
+
+/*************************************************************MOST POPULAR********************************************************/
+
+.popular-card-image-tablette {
+  display: none;
+}
+
+.popular-card-image-phone {
+  display: none;
+}
+
+#container-most-popular {
+  width: 30%;
+  height: fit-content;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-right: 3%;
+}
+
+#container-most-popular h2 {
+  background-color: inherit;
+  font-weight: bold;
+  padding: 40px 0 30px 20px;
+  font-size: 25px;
+}
+
+#most-popular-title {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: inherit;
+}
+
+#most-popular-title i {
+  background-color: inherit;
+}
+
+.popular-card {
+  width: 100%;
+  height: 160px;
+  padding: 1%;
+  margin-bottom: 7%;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+
+.popular-card:hover {
+  box-shadow: 0px 0px 20px 6px #bdbdbd;
+  color: #0065fc;
+}
+
+.popular-card-body {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+}
+
+.popular-card-image-desktop {
+  width: 60%;
+  margin: 0;
+}
+
+.popular-card-image-desktop img {
+  border-radius: 10% 0 0 10%;
+  object-fit: cover;
+  width: 170px;
+  height: 100%;
+}
+
+@media all and (max-width: 1100px) {
+  .popular-card-image-desktop {
+      width: 50%;
+  }
+}
+
+.popular-card-text {
+  position: relative;
+  margin: 1% 8% 1% 3%;
+}
+
+.popular-card-name {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 2%;
+}
+.popular-card-price{
+  margin-bottom: 2%;
+  color: black !important;
+  margin-left: 3%;
+  font-size: 15px;
+}
+.popular-card-rating {
+  font-size: 15px;
+  position: absolute;
+  bottom: 5%;
+}
+.popular-card i {
+  color: #0065fc;
+}
+i.gray-star {
+  color: #f2f2f2;
+}
+
+/******************************************************ACTIVITY************************************************************/
+
+#activity-main-title {
+  font-weight: bold;
+  padding: 40px 0 30px 60px;
+  font-size: 25px;
+}
+
+#activity-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  height: 550px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+}
+
+.activity-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5% 0 5% 4%;
+}
+
+.activity-card {
+  width: 23%;
+  box-shadow: 0px 0px 20px 6px rgba(189, 189, 189, 0.49);
+  border-radius: 25px;
+  margin: 0 1% 0% 1%;
+  overflow: hidden;
+}
+
+.activity-card:hover {
+  box-shadow: 0px 0px 20px 6px #bdbdbd;
+  color: #0065fc;
+}
+
+/*VIEUX PORT*/
+
+#activity-image-vieux-port img {
+  object-fit: cover;
+  width: 100%;
+  height: 430px;
+  overflow: hidden;
+}
+
+/*FORT DE POMEGUE*/
+
+#activity-image-fort img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+#activity-image-iles img {
+  object-fit: cover;
+  width: 100%;
+  height: 135px;
+}
+
+#activity-image-parc img {
+  object-fit: cover;
+  width: 100%;
+  height: 430px;
+}
+
+#activity-image-notre-dame img {
+  object-fit: cover;
+  width: 100%;
+  height: 165px;
+}
+
+#activity-image-parc-longchamp img {
+  object-fit: cover;
+  width: 100%;
+  height: 165px;
+}
+
+/******************************************************FOOTER*******************************************/
+
+#footer-container {
+  width: 100%;
+  height: fit-content;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: flex-start;
+  padding: 3% 0 3% 2%;
+}
+
+#footer-container ul {
+  list-style-type: none;
+  margin-right: 15%;
+  margin-left: 3%;
+  background-color: #f2f2f2;
+}
+
+#footer-container li {
+  background-color:#f2f2f2;
+  line-height: 35px;
+}
+.list-name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 3%;
+}

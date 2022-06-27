@@ -1,0 +1,219 @@
+*{
+    background-color: white;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*/
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.logo{
+    background-image: url(../image/logo/Booki@3x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+}
+
+
+.nav-links{
+    list-style: none;
+    display: flex;   
+}
+
+
+.nav-item{
+    display: inline-block;
+    padding: 40px 40px;    
+}
+
+
+.nav-item a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+
+.nav-item:hover a{
+    color: #0065FC;
+}
+
+
+.nav-item:hover {
+    border-top: 2px solid #0065FC;
+}
+
+
+
+
+/*HERBERGEMENT MARSEILLE///*HERBERGEMENT MARSEILLE///*HERBERGEMENT MARSEILLE///*HERBERGEMENT MARSEILLE///*HERBERGEMENT MARSEILLE///*HERBERGEMENT MARSEILLE*/
+
+
+
+#container-hebergement{
+    width: 100%;
+    margin: 5% auto 0 auto;
+    order: 2;
+    background-color: white;
+}
+
+.card-image-desktop{
+    display: none;   
+}
+
+.card-image-phone{
+    display: none;
+}
+
+.card-image-tablette{
+    display: block;
+    margin: 1% 1% 3% 1%;
+}
+
+.card-image-tablette img{
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.card {
+    width: 90%;
+    height: 370px;
+    padding: 0%;
+    margin-bottom: 3%;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .card-name {
+    font-size: 22px;
+    margin-bottom: 2%;
+    margin-left: 3%;
+  }
+  
+  .card-price {
+    margin-bottom: 3%;
+    margin-left: 3%;
+    font-size: 20px;
+  }
+  
+  .card-rating{
+    margin-left: 3%;
+    font-size: 20px;
+  }
+
+
+/*MOST POPULAR///*MOST POPULAR///*MOST POPULAR///*MOST POPULAR///*MOST POPULAR///*MOST POPULAR///*MOST POPULAR///*MOST POPULAR*/
+
+#container-most-popular{
+    
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+}
+
+.popular-card{
+    height: 200px;
+    margin-bottom: 2%;
+}
+
+.popular-card-text{
+    margin: 0;
+    width: 100%;
+    padding-left: 3%;
+}
+.popular-card-name{
+    font-size: 22px;
+    margin-left: 0;
+}
+
+.popular-card-price{
+    font-size: 20px;
+    margin-left: 0;
+
+}
+
+.popular-card-rating{
+    margin-left: 0;
+    font-size: 20px;
+}
+.popular-card-image-tablette{
+    display: block;
+    width: 50%;
+    height: 100%;
+
+}
+
+.popular-card-image-desktop{
+    display: none;
+}
+
+.popular-card-image-phone{
+    display: none;
+}
+
+.popular-card-image-tablette img{
+    border-radius: 5% 0 0 5%;
+    object-fit:fill;
+    width: 350px;
+    height: 100%;
+}
+
+
+/************************************************************ACTIVITY***************************************************/
+
+#activity-main-title {
+    padding: 5% 0 2% 5%;
+    font-size: 25px;
+  }
+
+#activity-container{
+    width: 100%;
+    display: table;
+    padding: 5%;
+}  
+
+.activity-card{
+    display: inline-block;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 5%;
+}
+
+.activity-card img{
+    height: 270px!important;
+}
+
+.activity-title{
+    font-size: 20px;
+    margin: 4% 0 3% 4%;
+}
+
+/******************************************************FOOTER*******************************************/
+
+#footer-container{
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+ }
+ 
+ 
+ .list-name {
+     margin-top: 3%;
+     margin-bottom: 3%;
+   }
